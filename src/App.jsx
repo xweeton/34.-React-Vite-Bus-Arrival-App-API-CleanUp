@@ -50,7 +50,7 @@ export default function App() {
       <ul>
         {arrivalInfo.services.map((arrival, index) => (
           <li key={index}>
-            Bus {arrival.bus_no} arriving in {arrival.next_bus_mins} minutes
+            Bus {arrival.bus_no}: {arrival.next_bus_mins >= 0 ? `Arriving in ${arrival.next_bus_mins} minutes` : `Arrived at ${-arrival.next_bus_mins} minutes ago`}
           </li>
         ))}
       </ul>
