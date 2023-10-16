@@ -37,7 +37,8 @@ export default function App() {
   return (
     <div>
       <img src='./src/bus-stop.jpg' height='200px' />
-      <h1>Bus Arrval Times - Bus Stop ID {arrivalInfo.bus_stop_id}</h1>
+      <h1>Bus Arrval Times</h1>
+      <h1>Bus Stop ID {arrivalInfo.bus_stop_id}</h1>
       <select onChange={onSelectChangeHandler}>
         <option>Select Bus Stop ID</option>
         {option.map((option, index) => {
